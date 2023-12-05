@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 const Item2 = ({ val2, incHandler }) => {
   console.log("Item2 Called");
@@ -10,4 +10,4 @@ const Item2 = ({ val2, incHandler }) => {
   );
 };
 
-export default Item2;
+export default memo(Item2); //changes alias
